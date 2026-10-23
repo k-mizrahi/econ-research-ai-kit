@@ -1,0 +1,13 @@
+{
+  "name": "dugri",
+  "displayName": "Dugri",
+  "description": "A direct, no-fluff output style: the finding first, short sentences, dry humor kept out of the fix.",
+  "author": {
+    "name": "Kobi Mizrahi",
+    "url": "https://github.com/k-mizrahi"
+  },
+  "homepage": "https://github.com/k-mizrahi/econ-research-ai-kit",
+  "repository": "https://github.com/k-mizrahi/econ-research-ai-kit",
+  "license": "MIT",
+  "keywords": ["output-style"]
+}

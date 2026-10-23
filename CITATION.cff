@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If this kit shapes your research workflow, please cite it as below."
+title: "econ-research-ai-kit: Guardrails and project memory for AI-assisted empirical research with Claude Code"
+type: software
+authors:
+  - family-names: Mizrahi
+    given-names: Kobi
+repository-code: "https://github.com/k-mizrahi/econ-research-ai-kit"
+license: MIT
+date-released: "2026-10-23"
+keywords:
+  - economics
+  - empirical research
+  - research workflow
+  - reproducibility
+  - Claude Code

@@ -1,0 +1,22 @@
+{
+  "name": "econ-research-ai-kit",
+  "description": "Claude Code plugins for AI-assisted empirical research in economics.",
+  "owner": {
+    "name": "Kobi Mizrahi",
+    "url": "https://github.com/k-mizrahi"
+  },
+  "plugins": [
+    {
+      "name": "econ-research",
+      "source": "./plugins/econ-research",
+      "description": "Project memory, planning, research-integrity checks, paper and slide writing, and an experimental simulated seminar for empirical economics.",
+      "category": "research"
+    },
+    {
+      "name": "dugri",
+      "source": "./plugins/dugri",
+      "description": "Optional output style: direct and terse.",
+      "category": "output-style"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+draft_location,claim,source_file,source_value,status
+L23 / L55,"2,000 firms / 20,000 firm-years, 2010-2019",data/panel.csv; output/main_results.csv,"20000 rows; 2000 firms; years 2010-2019; n_obs=20000, n_clusters=2000",MATCH
+L24 / L56,"about half eligible (p=0.5)",code/simulate.py L13; data/panel.csv,"p=0.5; realized 1062 treated / 938 control (53.1%)",MATCH
+L29 / L102,"patents OLS coef 0.324 / 0.323959",output/main_results.csv row patents,0.32395889800392697,MATCH
+L29 / L102,"patents SE 0.038 / 0.038222",output/main_results.csv row patents,0.03822241632652753,MATCH
+L30 / L102,"control pre-mean 1.247 / 1.247335",output/main_results.csv row patents,1.2473347547974414,MATCH
+L31 / L103,"any_patent LPM coef 0.072 / 0.072283",output/main_results.csv row any_patent,0.07228345761105687,MATCH
+L31 / L103,"any_patent SE 0.012 / 0.011930",output/main_results.csv row any_patent,0.011929537990784705,MATCH
+L32 / L103,"control pre-mean 0.579 / 0.579104",output/main_results.csv row any_patent,0.5791044776119403,MATCH
+L102,"coef/mean 26.0%",output/main_results.csv (derived),25.97%,MATCH
+L103,"coef/mean 12.5%",output/main_results.csv (derived),12.48%,MATCH
+L113,"t approx 8.5 (patents)",output/main_results.csv (derived),8.476,MATCH
+L113,"t approx 6.1 (any_patent)",output/main_results.csv (derived),6.059,MATCH
+L33 / L116,"pre-period max |coef/SE| = 1.01 at rel_year -3",output/event_study.csv rel_year -3,1.0088,MATCH
+L34 / L115,"post-period coefs 0.26-0.35",output/event_study.csv rel_year 0..4,0.2583-0.3527,MATCH
+L114,"post-period coefs approx 3.2-4.6 SE from zero",output/event_study.csv (derived),3.252-4.633 (lower bound rounds to 3.3),ROUNDING
+L109-110,"event-study coefs and SEs (9 rel_years, 4dp)",output/event_study.csv,all 18 values equal source rounded to 4dp,MATCH
+L59,"SEED = 20261023",code/simulate.py L5,20261023,MATCH
+L62-63,"DGP exp(-0.2 + fe + 0.03(year-2010) + 0.25 post), fe~N(0,0.8^2)",code/simulate.py L12/L19,identical,MATCH
+L63-64,"EFFECT 0.25 log rate approx 28% increase",code/simulate.py L9 (derived),exp(0.25)-1 = 28.4%,MATCH
+L96,"outputs last regenerated at 4c397c5",git log -- output/,4c397c5 (2026-10-23 17:35),MATCH
+L171,"prior 4dp CSVs committed at 514f212",git log -- output/main_results.csv,514f212 present in history,MATCH

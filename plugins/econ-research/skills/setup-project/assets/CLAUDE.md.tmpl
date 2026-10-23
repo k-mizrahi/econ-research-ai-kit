@@ -1,0 +1,49 @@
+# {{PROJECT_NAME}}
+
+<!-- One or two sentences: what this project is, what question it answers, who it is for. -->
+
+## Read first
+
+<!-- The documents of record, in the order a new session should read them. Delete
+     lines for documents the project does not keep. -->
+- The latest file in `handoffs/` — where the last session left off.
+- `docs/key-decisions.md` — settled choices; don't re-litigate them.
+- `docs/results-log.md` — the numbers of record; other docs point here.
+- `docs/dropped-analyses.md` — approaches already tried and abandoned.
+- `docs/backlog.md` — open work, by ID.
+- `.claude/rules/skill-bindings.md` — paths and settings the research skills use.
+
+## Architecture
+
+<!-- The moving parts and how they connect, limited to what an agent must not break.
+     For analysis work, the data flow: raw → processing → outputs, with the script
+     that produces each dataset of record. -->
+
+## Commands
+
+<!-- The exact commands to run, test, and rebuild, e.g.
+     - Full pipeline: `python run_all.py` / `make` / `do master.do`
+     - Tests: `pytest -q` -->
+
+## Conventions & invariants
+
+<!-- Project-specific rules that are easy to get wrong and expensive to fix. Do NOT
+     repeat cross-project conventions that already live in ~/.claude/CLAUDE.md.
+     What belongs here:
+     - Canonical values (event year, sample window, unit IDs, clustering level).
+     - Invariants that look like redundancy but are load-bearing — say "do NOT simplify".
+     - One-way data flows (edit source → regenerate; never hand-edit a generated file).
+     - Fail-loud expectations (an unmapped input aborts; it is never tolerated). -->
+
+## Key decisions — don't re-litigate
+
+<!-- The 3–5 settled choices that shape everything, each with a word on why. The full,
+     append-only register is docs/key-decisions.md. -->
+
+## Status
+
+Last refresh: never — run the `refresh` skill to stamp this line.
+(If more than a month or ~50 commits have passed since this stamp,
+suggest running `refresh`. Suggest only — `refresh` is user-triggered.)
+
+<!-- Current state: which phase, what is live, where the latest summary of record is. -->

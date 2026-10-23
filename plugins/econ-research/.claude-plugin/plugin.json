@@ -1,0 +1,13 @@
+{
+  "name": "econ-research",
+  "displayName": "Econ Research",
+  "description": "Guardrails and project memory for AI-assisted empirical research: project setup, planning, session handoffs, decision and results logs, doc-drift audits, co-author summaries, section-by-section paper and slide writing, and an experimental simulated seminar.",
+  "author": {
+    "name": "Kobi Mizrahi",
+    "url": "https://github.com/k-mizrahi"
+  },
+  "homepage": "https://github.com/k-mizrahi/econ-research-ai-kit",
+  "repository": "https://github.com/k-mizrahi/econ-research-ai-kit",
+  "license": "MIT",
+  "keywords": ["economics", "empirical-research", "econometrics", "reproducibility", "academic-writing"]
+}

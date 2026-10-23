@@ -22,3 +22,4 @@ newest last. A reversal is a new row, not an edit.
 | 2026-10-23 | The design check is called a mechanical-bias check. | It targets bias created by how a sample or variable is built, not endogeneity in the econometric sense. |
 | 2026-10-23 | Plugin manifests carry no `version`. | Installs follow commits, so there is no version number to forget to bump. |
 | 2026-10-23 | Commits to this repository use the GitHub noreply address. | Commit metadata is public; the noreply address links commits to the GitHub account without exposing a real address. |
+| 2026-10-23 | Public history starts at the first release; development since July stays private. | It contains project data and private material. |

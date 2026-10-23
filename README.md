@@ -2,6 +2,9 @@
 
 **Guardrails and project memory for AI-assisted empirical research with Claude Code.**
 
+I'm an applied-micro economist (PhD candidate, Princeton). This is the setup I run my own
+research on. Each convention in it was learned the hard way, in a real project.
+
 AI coding agents make empirical work faster. They also make four failures more likely:
 
 - **Settled decisions get re-litigated.** The agent doesn't remember why an approach

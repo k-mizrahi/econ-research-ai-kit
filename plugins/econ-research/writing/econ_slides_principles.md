@@ -6,7 +6,7 @@ Beamer for Economists". Examples come from talks *you* like and from your own pa
 decks, collected once at setup with the `add-exemplars` skill (see
 `exemplar-schema.md`). Do not restate these rules elsewhere.
 Prose rules (one name per concept, no editorializing, kill intensifiers) carry over
-from `econ_writing_principles.md` §1 — slides inherit them; they are not repeated here.
+from `econ_writing_principles.md` §§1 and 1b — slides inherit them; they are not repeated here.
 
 ---
 
@@ -170,7 +170,7 @@ otherwise "the talk is already over, you just don't know it."
 
 | Type | Budget rule |
 |---|---|
-| Lunch/internal seminar (30–45') | ~25–33 main frames + armor; full design exposition (§5.1); heavy backup |
+| Lunch/internal seminar (30–45') | at most one main frame per 1.5 minutes (~20 at 30', ~30 at 45') + armor; full design exposition (§5.1); heavy backup |
 | Job talk / seminar (75–90') | everything above, and mechanisms and rival channels get more slides than data + design + baseline combined |
 | Published-paper / invited talk | compress design, no lit slide, the measure or data can be the star, ~20–25 slides |
 | Public lecture | baseline equation still appears once (§5.2), gloss maximal; breadth of outcomes replaces robustness; give the shock a face (a person, a place) before a number |
@@ -178,6 +178,9 @@ otherwise "the talk is already over, you just don't know it."
 Headline position scales with how much the audience must be taught to care: later
 when the measure itself is the contribution or the audience is general. For a
 department audience, earlier is better — the This-Paper slide carries it regardless.
+
+**Pace cap, every talk type:** at most one main frame per 1.5 minutes. The audience needs
+time to digest a slide (Cochrane); frames beyond the cap go to backup or the notes document.
 
 ## 9. Slide mechanics (Goldsmith-Pinkham, quantified)
 
@@ -193,7 +196,8 @@ department audience, earlier is better — the This-Paper slide carries it regar
 2. **One idea per slide** — "Better to make one point well."
 3. **Colorblind-safe palette with fixed semantic roles**: one color everywhere, one for
    emphasis/contrast, one for transitions. Fix the mapping once in the project's
-   figure style and let slides inherit it; GP's Okabe–Ito set is a good default.
+   figure style and let slides inherit it; GP's Okabe–Ito set is a good default. **Color never carries a distinction alone:** readers print in black and white,
+   and eight percent of men are colorblind. Every series also differs by marker or line style.
 4. **Navigation symbols off, frame numbers on.** Section transitions via full-bleed
    divider frames (`\Huge` centered), not repeated outline slides.
    **Frame labels must not contain a colon:** with some beamer builds,
@@ -237,6 +241,8 @@ department audience, earlier is better — the This-Paper slide carries it regar
 - **Roadmap slide:** GP replaces it with divider frames; a recurring agenda
   tracker earns its keep only in 40+-slide talks; a single enumerate is fine.
   Genericity test from the writing doc applies.
+- **Opening a talk:** Cochrane's seminar advice bans motivation, literature, and result
+  previews; Shapiro's canon uses them in compressed form. Resolved here: §2 stands.
 - **CIs on headline exhibits:** always for a design still being adjudicated; droppable
   in published-paper talks.
 

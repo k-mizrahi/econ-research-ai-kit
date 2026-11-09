@@ -4,6 +4,9 @@
   or intermediate data. One canonical output dir (e.g. `output/`).
 - **Figures:** 300 DPI, clean axes, consistent per-project palette; save to
   `figures/`. Regenerate from script — never hand-edit an exported figure.
+- **Black-and-white test:** no distinction carried by color alone. Every series also differs
+  by marker or line style, every bar group by hatching. No dotted lines that vanish when
+  reproduced; no dashes on volatile series. Captions define every symbol.
 - **Reproducibility:** outputs are regenerable from a single command
   (`refresh.py` / `make`-style). Prefer a full recompute over incremental patching;
   the chain should **abort on the first failure**, not limp on with stale data.

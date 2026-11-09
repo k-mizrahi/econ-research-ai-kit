@@ -32,6 +32,7 @@ Faculty seminar simulation. Three domain experts give independent reads (Round 1
    - Project background from the project's CLAUDE.md (setting, event timing, sample, unit of analysis)
    - Settled decisions and dropped approaches (so agents don't re-litigate closed questions)
    - Any results or figures the user wants feedback on
+   - The draft's text and exhibits, if a draft exists
 
 3. **Check for obvious dead ends.** If the idea was already abandoned (per the dropped-analyses doc), tell the user before launching agents.
 
@@ -77,8 +78,10 @@ Respond with:
 4. **Methodological bar** — Does this meet the empirical standard of a top general-interest journal? What's the weakest link?
 5. **Comparison to cross-field exemplars** — Name 1-2 papers from OTHER fields that successfully used a specific setting to make a general point. How does this paper compare?
 6. **Would you accept this?** — As an editor at a top-5 journal, would you send this out? R&R? Desk reject? Why?
+7. **Exposition check (only if the brief includes a draft)** — How far in does the main result appear? What before it could a reader do without? Can you state the contribution after the first paragraph? Do the main table and figure make sense without the text, and in black and white? Give locations, not impressions.
 
-7. **The paper I WISH I were reading** — You've now seen this data, setting, and institutional context. Forget the current paper. What's the most compelling general-interest paper you could write from this vantage point? Propose 2-3 alternatives:
+
+8. **The paper I WISH I were reading** — You've now seen this data, setting, and institutional context. Forget the current paper. What's the most compelling general-interest paper you could write from this vantage point? Propose 2-3 alternatives:
    - **Question** — one sentence, framed as a GENERAL economics question (not "what happened in this industry")
    - **Why it's better** — why would this clear your desk-reject bar when the current paper might not?
    - **The hook** — the single surprising fact or puzzle that makes a non-specialist care

@@ -104,6 +104,8 @@ immutable once written, and the next summary is a new dated file.
   gated — it is the section that prevents a co-author citing dead numbers.
 - **No editorializing point estimates** ("good"/"exciting"). Report what the
   numbers are; precision and caveats yes, valence no.
+- **Prose and exhibits follow the writing canon:** `${CLAUDE_SKILL_DIR}/../../writing/econ_writing_principles.md`
+  §§1–1b for prose and usage, §7 for tables and figures.
 - **Immutable snapshot.** Never edit a previous summary to "update" it — write
   a new dated file and mark the supersession.
 - If the compile surfaces an inconsistency between state-of-record docs

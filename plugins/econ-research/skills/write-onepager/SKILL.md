@@ -47,7 +47,7 @@ the project's exact manifest paths from its skill bindings (`.claude/rules/skill
 | The paper's **narrative constraints of record** (facts register, gated list — location per bindings) | the sentences that are allowed |
 | The project's backlog/tracker — open items for this paper tagged as user decisions | the "open decisions" bullets |
 | The latest **deck of record** `.tex` + its `_notes.pdf` (the paper's slides dir) | the This-Paper slide, the chosen figures, spec lines already verified by `check-output` |
-| `${CLAUDE_SKILL_DIR}/../../writing/econ_writing_principles.md` §2 (abstract), §3 (intro), §9 (shared defaults) | the prose rules |
+| `${CLAUDE_SKILL_DIR}/../../writing/econ_writing_principles.md` §§1–1b (prose and usage), §2 (abstract), §3 (intro), §9 (shared defaults) | the prose rules |
 | The user's exemplar notes (per `${CLAUDE_SKILL_DIR}/../../writing/exemplar-schema.md` § Where notes live; if there are none, stop and run `add-exemplars` first, the setup step, unless the user explicitly asks to proceed without) — the **§A. Introduction architecture** and abstract blocks of the 2–3 papers closest to this one (bindings may name them per paper) | the register: how a top-5 paper states question, design, and magnitude in plain English |
 
 Do **not** read: archive directories, `handoffs/`, superseded summaries,
@@ -99,7 +99,7 @@ so a reader can find the design or the result without reading linearly.
    title; subtitle `Research brief`; author; date. No banner here — provenance
    goes on the last page (Step 5).
 2. **Motivation and question** (one paragraph) — one hook ground (Y matters / is puzzling
-   / is big), anchored on a concrete fact the motivation figure shows; then the
+   / is big), anchored on a concrete, cited fact the motivation figure shows; then the
    "This paper asks…" sentence. Zero literature review.
 3. **Research design and data** (one paragraph) — the setting, who is compared
    with whom, why that comparison isolates the effect, and what the data are, in
@@ -119,7 +119,7 @@ so a reader can find the design or the result without reading linearly.
    Plain words; tracker ids go in the apparatus.
 
 Literature: at most one positioning sentence, and only if it earns its place;
-citations, if any, by author-year in parentheses.
+cite every factual claim by author-year in parentheses.
 
 ## Step 3b — Figure pages: 3–4 exhibits that tell the story in order
 
@@ -159,7 +159,8 @@ Any claim without a source is cut. Then the lint:
 - **Layout**: title block present; the five section headings present, in order;
   one-half spacing throughout the brief; no banner or process note before the
   last page.
-- No editorializing estimates (no "good", "reassuring", "exciting"); ≤1 "striking".
+- No editorializing estimates (no "good", "reassuring", "exciting", "striking").
+- Usage pass per principles §1b; no figure distinction carried by color alone.
 - One name per concept across page 1 and the captions.
 - Captions carry SE or CI with each coefficient; counts and sample sizes match
   the spec line.
@@ -174,8 +175,8 @@ Any claim without a source is cut. Then the lint:
 1. **File**: `{onepager_dir}/{paper}_onepager_{YYYY-MM-DD}.tex` (the paper's onepager dir
    per bindings / `CLAUDE.md`; default `onepager/`).
    New dated file every run; earlier one-pagers stay, the newest is the record.
-   Preamble: `\documentclass[11pt]{article}`, `\usepackage[margin=0.9in]{geometry}`,
-   `amsmath`, `booktabs`, `graphicx`, `caption`, `hyperref`, `setspace` with
+   Preamble: `\documentclass[12pt]{article}`, `\usepackage[margin=1in]{geometry}`,
+   `mathptmx` (Times), `amsmath`, `booktabs`, `graphicx`, `caption`, `hyperref`, `setspace` with
    `\onehalfspacing` for the brief (captions and apparatus may be single-spaced),
    `natbib` only if a citation is used. Title via `\title`/`\author`/`\date` +
    `\maketitle`; sections via `\section*{}`. A `\specline{}` macro matching the

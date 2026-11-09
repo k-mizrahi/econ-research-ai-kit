@@ -34,7 +34,7 @@ claim, and every anticipated question has a pre-built backup slide.
 
 Ask for slot length and audience if not given, then apply principles §8:
 
-- **Lunch/internal (30–45')** — default: ~25–33 main frames + backup armor, full
+- **Lunch/internal (30–45')** — default: at most one main frame per 1.5 minutes (~20 at 30', ~30 at 45') + backup armor, full
   Shapiro-explicit design slide, one sanctioned joke max.
 - **Seminar/job talk (75–90')**: mechanisms/rebuttal get ~2× the space of
   data+design+baseline combined; armor doubles.
@@ -105,7 +105,7 @@ frames when revising an existing deck.
 - Overlays only where practiced beats exist (This-Paper reveal, concern→test,
   fixed-axis series swaps).
 - Don't put anything on a frame you don't plan to say; space = emphasis.
-- Prose rules inherit from `econ_writing_principles.md` §1 (one name per concept, no
+- Prose rules inherit from `econ_writing_principles.md` §§1 and 1b (one name per concept, no
   editorializing point estimates, kill intensifiers).
 
 ## Step 4 — Lint pass (common failure modes)
@@ -120,6 +120,7 @@ violations** (any text-only frame with >4 bullets or any paragraph-length bullet
 figure/table frame carrying body text beyond the takeaway + 2–3 reading bullets —
 move the excess to the notes doc); a deck without its companion notes PDF; **a frame
 label containing a colon** (silently dropped — compare PDF page count to frame count);
+a distinction carried by color alone; more than one main frame per 1.5 minutes;
 an event-study graph without a raw-means button; **a regression-result frame
 without a spec line, or a spec line that doesn't name the equation** (§4.9); **a
 deck with zero equations; the same equation shown twice; a variant model (PPML,

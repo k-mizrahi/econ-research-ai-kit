@@ -10,7 +10,7 @@ rules below.)
 1. **File**: `{drafts_dir}/{section}_{YYYY-MM-DD}.tex`, where `{drafts_dir}` is the
    paper's drafts directory as the project's `CLAUDE.md` names it (or a path the user
    names; default `drafts/`). Preamble: `\documentclass[12pt]{article}`,
-   `\usepackage[margin=1in]{geometry}`, `natbib` (authoryear), `amsmath`, `booktabs`,
+   `\usepackage[margin=1in]{geometry}`, `natbib` (authoryear), `mathptmx` (Times), `amsmath`, `booktabs`,
    `hyperref`, `\onehalfspacing` (`setspace`). Citations: `\citet`/`\citep` with a
    per-draft `.bib` stub next to the tex (author-year keys like `azoulay2010`); if the
    project bib doesn't yet have an entry, add a stub entry — never fake page-ready

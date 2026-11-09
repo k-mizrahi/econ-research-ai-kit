@@ -9,8 +9,9 @@ rules, your own exemplar notes, and a few hard rules about numbers.
 
 The canon lives in `plugins/econ-research/writing/`:
 
-- `econ_writing_principles.md` covers prose and section rules, drawn from the craft
-  guides below.
+- `econ_writing_principles.md` covers prose, usage, and section rules, drawn from the craft
+  guides below. Cochrane and the house usage rules are its controlling style sources, and the
+  house rules win where they disagree. Section 10 records how conflicts among the sources are resolved.
 - `econ_slides_principles.md` covers talks, drawn from Shapiro's and
   Goldsmith-Pinkham's talk guides.
 - `latex-output.md` sets the output format. Drafts are compiled LaTeX with a visible
@@ -54,8 +55,14 @@ wherever a project's bindings point. Keep them out of public repositories.
 - **Numbers only from the record.** Drafts and slides are the one place numbers appear
   in full, so every number traces to the results log or the generating CSV. Run
   `check-output` before anything leaves the repository.
-- **A neutral voice.** Estimates are never "good", "bad", or "exciting". Use one name per
-  concept. A null always states the effect size it rules out.
+- **A neutral voice.** Estimates are never "good", "bad", or "exciting", and your own work
+  gets no adjectives. Use one name per concept. A null always states the effect size it
+  rules out.
+- **The contribution first.** The opening paragraph gives the question and the headline; the
+  closest papers come at the end of the introduction; nothing precedes the main result that
+  a reader does not need to understand it.
+- **Exhibits that stand alone.** Tables carry the dependent variable and its mean; no
+  distinction in a figure or slide rests on color alone.
 - **A model line on every result slide.** It names the equation, estimator, outcome,
   sample, fixed effects, clustering, and treatment unit, in that order.
 

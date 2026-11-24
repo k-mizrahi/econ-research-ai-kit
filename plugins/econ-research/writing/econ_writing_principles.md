@@ -94,7 +94,9 @@ House usage rules, except where marked. A revision pass checks every line.
 
 **Format**
 
-- 12-point Times New Roman, one-half spacing, one-inch margins, unless a journal or reader asks otherwise.
+- Papers and section drafts: the house preamble `paper_preamble.tex` (12-point Computer Modern,
+  one-and-a-half spacing, one-inch margins, small-caps heads, captions above exhibits), unless a
+  journal or reader asks otherwise. One-pagers and decks keep their own skill's format.
 - Everything must read on a black-and-white printer (§7.10).
 
 ---

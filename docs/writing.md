@@ -15,7 +15,8 @@ The canon lives in `plugins/econ-research/writing/`:
 - `econ_slides_principles.md` covers talks, drawn from Shapiro's and
   Goldsmith-Pinkham's talk guides.
 - `latex-output.md` sets the output format. Drafts are compiled LaTeX with a visible
-  draft apparatus, never loose Markdown.
+  draft apparatus, never loose Markdown. `paper_preamble.tex` is the house typesetting
+  every section draft copies (Computer Modern 12pt, one-and-a-half spacing, small-caps heads).
 - `exemplar-schema.md` is the format for exemplar notes (see the next section).
 
 ## Step one: your style profile

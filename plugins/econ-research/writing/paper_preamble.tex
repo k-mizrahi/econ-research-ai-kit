@@ -1,0 +1,59 @@
+% =====================================================================================
+% House paper format for drafts written by the write-* section skills. It reproduces a
+% common economics job-market typesetting:
+%   - Computer Modern 12pt, T1 encoding (cm-super Type 1 fonts); no Times, no lmodern
+%   - US Letter, 1in margins on all sides
+%   - one-and-a-half spacing in the text; footnotes, tables and figures single-spaced
+%     (setspace does this)
+%   - section heads in small caps, not bold: \Large / \large / \normalsize, number + 1em
+%   - default \maketitle (title \LARGE, author and date \large), default abstract
+%   - page number bottom right on every page, title page included; no header
+%   - exhibits: caption ABOVE ("Table 1: Title", centred if one line, else justified),
+%     tables set \small throughout, figures at normal size; notes below with an
+%     italic "Notes:" lead-in, full width
+%   - author-year citations without a comma, "(Granovetter 1983; Burdett and
+%     Mortensen 1998)"; reference list \bibliographystyle{chicago}
+%   - hidden link borders
+% Use: copy this file verbatim to the top of the draft. Put draft-specific packages and
+% macros below the marked line. Do not change a setting above it. Needs the TeX packages
+% cm-super, chicago, fancyhdr, caption, natbib, setspace (tlmgr install <pkg> on TinyTeX).
+% =====================================================================================
+\documentclass[12pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[onehalfspacing]{setspace}
+% Section heads: article.cls's own definitions with the font changed to small caps.
+% (titlesec adds a strut that \onehalfspacing inflates, pushing heads down.)
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}{2.3ex \@plus .2ex}{\normalfont\Large\scshape}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {-3.25ex \@plus -1ex \@minus -.2ex}{1.5ex \@plus .2ex}{\normalfont\large\scshape}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+  {-3.25ex \@plus -1ex \@minus -.2ex}{1.5ex \@plus .2ex}{\normalfont\normalsize\scshape}}
+\makeatother
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+\pagestyle{plain}
+\usepackage{graphicx}
+\usepackage{booktabs}
+% Tables are \small throughout (caption, body, notes). The float box and setspace both
+% reset the size to \normalsize, so \small goes inside the environment, after them.
+\makeatletter
+\let\house@table\table \let\endhouse@table\endtable
+\renewenvironment{table}[1][\fps@table]{\house@table[#1]\small}{\endhouse@table}
+\makeatother
+\usepackage[position=top]{caption}
+\captionsetup[table]{font=small}
+\usepackage[authoryear,round]{natbib}
+\setcitestyle{aysep={}}
+\usepackage[hidelinks]{hyperref}
+% Exhibit notes, placed after the tabular or \includegraphics, inside the float.
+\newcommand{\exnotes}[1]{\par\vspace{0.5\baselineskip}%
+  {\parindent=0pt\leftskip=0pt\rightskip=0pt\parfillskip=0pt plus 1fil\textit{Notes:} #1\par}}
+% Run-in paragraph heads: bold, at the normal paragraph indent ("\runin{Firm size.} Text").
+\newcommand{\runin}[1]{\textbf{#1}\enspace}
+% Reference list: \bibliographystyle{chicago} \bibliography{<draft>.bib}
+% ----------------------- draft-specific packages and macros below -------------------

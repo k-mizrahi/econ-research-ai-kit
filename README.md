@@ -184,7 +184,7 @@ it. Reasoning, references, and Stata / R / Python syntax:
 | Path | What |
 |---|---|
 | `plugins/econ-research/skills/` | the 23 skills |
-| `plugins/econ-research/writing/` | the writing canon: prose and slide principles, LaTeX output spec, exemplar-note schema |
+| `plugins/econ-research/writing/` | the writing canon: prose and slide principles, LaTeX output spec and paper preamble, exemplar-note schema |
 | `plugins/dugri/` | the optional output style |
 | `docs/` | workflow, conventions, writing, design decisions |
 | `examples/toy-project/` | a synthetic project taken through the workflow |

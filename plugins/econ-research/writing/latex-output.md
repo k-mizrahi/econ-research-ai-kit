@@ -9,9 +9,13 @@ rules below.)
 
 1. **File**: `{drafts_dir}/{section}_{YYYY-MM-DD}.tex`, where `{drafts_dir}` is the
    paper's drafts directory as the project's `CLAUDE.md` names it (or a path the user
-   names; default `drafts/`). Preamble: `\documentclass[12pt]{article}`,
-   `\usepackage[margin=1in]{geometry}`, `natbib` (authoryear), `mathptmx` (Times), `amsmath`, `booktabs`,
-   `hyperref`, `\onehalfspacing` (`setspace`). Citations: `\citet`/`\citep` with a
+   names; default `drafts/`). **Preamble: copy `paper_preamble.tex` (next to this file)
+   verbatim**: Computer Modern 12pt via T1/cm-super, US Letter, 1in margins, one-and-a-half
+   spacing, small-caps section heads, page number bottom right, captions above exhibits,
+   tables `\small`, italic "Notes:" via `\exnotes{}`, `\bibliographystyle{chicago}`.
+   Draft-specific packages and macros go below its marked line; never change a setting
+   above it, and never re-add Times or `lmodern`. Put `\caption` before the tabular or
+   `\includegraphics`. Citations: `\citet`/`\citep` with a
    per-draft `.bib` stub next to the tex (author-year keys like `azoulay2010`); if the
    project bib doesn't yet have an entry, add a stub entry — never fake page-ready
    citations in plain text.

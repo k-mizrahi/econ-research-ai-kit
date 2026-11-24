@@ -5,7 +5,8 @@
 %   - US Letter, 1in margins on all sides
 %   - one-and-a-half spacing in the text; footnotes, tables and figures single-spaced
 %     (setspace does this)
-%   - section heads in small caps, not bold: \Large / \large / \normalsize, number + 1em
+%   - section heads in small caps, not bold: \Large / \large / \normalsize, number + 1em;
+%     \paragraph heads bold, run in at the paragraph indent, no space above
 %   - default \maketitle (title \LARGE, author and date \large), default abstract
 %   - page number bottom right on every page, title page included; no header
 %   - exhibits: caption ABOVE ("Table 1: Title", centred if one line, else justified),
@@ -32,6 +33,9 @@
   {-3.25ex \@plus -1ex \@minus -.2ex}{1.5ex \@plus .2ex}{\normalfont\large\scshape}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
   {-3.25ex \@plus -1ex \@minus -.2ex}{1.5ex \@plus .2ex}{\normalfont\normalsize\scshape}}
+% \paragraph{Firm size.} = a bold run-in head at the paragraph indent, an ordinary (stretchable)
+% word space after it and no extra space above, as in the reference format.
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\parindent}{0pt}{-.333em \@plus -.166em \@minus -.111em}{\normalfont\normalsize\bfseries}}
 \makeatother
 \usepackage{fancyhdr}
 \fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\thepage}%
@@ -50,10 +54,12 @@
 \usepackage[authoryear,round]{natbib}
 \setcitestyle{aysep={}}
 \usepackage[hidelinks]{hyperref}
+% Lets TeX stretch a line only when it otherwise cannot break it (no effect on normal lines).
+\setlength{\emergencystretch}{3em}
 % Exhibit notes, placed after the tabular or \includegraphics, inside the float.
 \newcommand{\exnotes}[1]{\par\vspace{0.5\baselineskip}%
   {\parindent=0pt\leftskip=0pt\rightskip=0pt\parfillskip=0pt plus 1fil\textit{Notes:} #1\par}}
-% Run-in paragraph heads: bold, at the normal paragraph indent ("\runin{Firm size.} Text").
-\newcommand{\runin}[1]{\textbf{#1}\enspace}
+% Run-in head inside a paragraph you have already started: "\runin{Firm size.} Text".
+\newcommand{\runin}[1]{\textbf{#1}}
 % Reference list: \bibliographystyle{chicago} \bibliography{<draft>.bib}
 % ----------------------- draft-specific packages and macros below -------------------

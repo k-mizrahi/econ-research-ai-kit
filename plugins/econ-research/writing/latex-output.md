@@ -14,8 +14,10 @@ rules below.)
    spacing, small-caps section heads, page number bottom right, captions above exhibits,
    tables `\small`, italic "Notes:" via `\exnotes{}`, `\bibliographystyle{chicago}`.
    Draft-specific packages and macros go below its marked line; never change a setting
-   above it, and never re-add Times or `lmodern`. Put `\caption` before the tabular or
-   `\includegraphics`. Citations: `\citet`/`\citep` with a
+   above it, and never re-add Times or `lmodern`. Put `\caption` (a title, no closing
+   period) before the tabular or `\includegraphics`; notes go below it in `\exnotes{}`,
+   never inside the caption. `\paragraph{Head.}` gives a bold run-in head at the paragraph
+   indent. Citations: `\citet`/`\citep` with a
    per-draft `.bib` stub next to the tex (author-year keys like `azoulay2010`); if the
    project bib doesn't yet have an entry, add a stub entry — never fake page-ready
    citations in plain text.
